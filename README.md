@@ -2,7 +2,7 @@ Visualize data from SQL and generate graph
 
 ### Run
 - streamlit run app.py --server.port 8081
-- adk web
+- adk api_server
 
 ### Architecture
 <img width="585" height="317" alt="image" src="https://github.com/user-attachments/assets/187fe39f-42df-4fc2-a242-7487dc185c51" />
