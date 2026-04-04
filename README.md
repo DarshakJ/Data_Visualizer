@@ -1,7 +1,32 @@
 Visualize data from SQL and generate graph
 
+### Run
+- streamlit run app.py --server.port 8081
+- adk web
+
 ### Architecture
 <img width="585" height="317" alt="image" src="https://github.com/user-attachments/assets/187fe39f-42df-4fc2-a242-7487dc185c51" />
+
+## Agent Data flow  
+### STATE
+<img width="412" height="457" alt="image" src="https://github.com/user-attachments/assets/d482ec8e-d153-476a-9798-5733aeecfb8d" />
+
+### Agent 1 : Query_Producer Request
+<img width="1280" height="389" alt="image" src="https://github.com/user-attachments/assets/79abc61e-92ff-45cf-90fc-61b2ed5da0c2" />
+
+### Agent 1 : Query_Producer Response
+<img width="1280" height="367" alt="image" src="https://github.com/user-attachments/assets/57771ade-9ccb-4d54-bce8-d564c7fc420e" />
+
+### Agent 2 : Validator_and_formatter Request
+<img width="1280" height="418" alt="image" src="https://github.com/user-attachments/assets/c8860faf-3e7a-4e29-9c2a-8f89c036a2dd" />
+
+### Agent 2 : Validator_and_formatter Response
+<img width="1280" height="365" alt="image" src="https://github.com/user-attachments/assets/1251b05a-d1f7-4aec-93df-d5909d2be0bd" />
+
+### Evaluation:
+<img width="419" height="227" alt="image" src="https://github.com/user-attachments/assets/78a297e8-6de0-4026-950c-7a3b38d09110" />
+
+
 
 ## Outputs
 ### Title based Area graph
