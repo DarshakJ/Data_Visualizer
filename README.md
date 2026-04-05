@@ -1,4 +1,143 @@
-Visualize data from SQL and generate graph
+# AI-Powered Auto Dashboard Generator
+
+A lightweight, privacy-first analytics system that turns natural language questions into SQL queries and visual dashboards—without requiring users to interact with complex databases or BI tools.
+
+---
+
+## 🚀 Overview
+
+This project explores a streamlined approach to data analytics using small LLMs and agent-based architecture.
+
+**Goal:**
+Enable non-technical users (sales teams, management, etc.) to simply ask questions and instantly receive meaningful insights in the form of charts and dashboards.
+
+No SQL. No dashboards to configure. Just ask.
+
+---
+
+## 🎯 Key Features
+
+* 🔎 Natural language → SQL query generation
+* 📊 Automatic graph & dashboard creation
+* 🧠 Agent-based modular architecture
+* 🔒 Fully on-prem deployment (via Ollama)
+* ⚡ Lightweight models (Llama 3.2, Qwen 2.5 3B)
+* 🖥️ Streamlit UI for quick visualization
+
+---
+
+## 🏗️ Architecture
+
+The system is built around a simple but effective agent workflow:
+
+### 1. Query Producer (Agent)
+
+* Understands user input
+* Uses database schema as context
+* Generates optimized SQL queries
+* Executes queries via tool calling
+* Returns structured results
+
+### 2. Format Checker (Agent)
+
+* Takes raw query output
+* Cleans and structures data
+* Converts into graph-ready format
+* Ensures compatibility with visualization layer
+
+### 3. Frontend (Streamlit)
+
+* Displays results as charts and dashboards
+* Provides a simple interface for user queries
+
+---
+
+## ⚙️ Tech Stack
+
+* **LLMs:** Llama 3.2, Qwen 2.5 3B
+* **Runtime:** Ollama (for local inference)
+* **Agent Framework:** Google ADK
+* **Frontend:** Streamlit
+* **Database:** Any SQL-compatible database
+
+---
+
+## 🔄 Workflow
+
+1. User enters a natural language query
+2. Query Producer generates SQL using schema context
+3. SQL query is executed on the database
+4. Results are passed to Format Checker
+5. Output is structured for visualization
+6. Streamlit renders graphs/dashboard
+
+---
+
+## 🧩 Example Use Case
+
+> “Show me monthly sales by region for the last 6 months”
+
+System flow:
+
+* Converts to SQL query
+* Executes against database
+* Formats output
+* Displays a chart (e.g., line or bar graph)
+
+---
+
+## ⚠️ Challenges
+
+* Tool calling reliability with small LLMs
+* SQL accuracy with limited context windows
+* Maintaining consistent output formatting for visualization
+* Balancing performance vs model size
+
+---
+
+## 🔒 Design Principles
+
+* **Privacy-first:** All data remains on-prem
+* **Lightweight:** Works with smaller models
+* **Modular:** Agent-based design for flexibility
+* **User-first:** No technical knowledge required
+
+---
+
+## 📌 Future Improvements
+
+* Better tool-calling reliability for small models
+* Schema-aware memory optimization
+* Smarter visualization selection
+* Multi-database support
+* Caching & query optimization
+
+---
+
+## 🤝 Contributing
+
+This is an early-stage project exploring practical limits of small LLMs in structured data workflows. Contributions, ideas, and feedback are welcome.
+
+---
+
+## 💬 Feedback
+
+If you’ve built something similar or experimented with agent-based data systems, feel free to share your insights—especially around:
+
+* Tool calling with smaller models
+* Improving SQL generation accuracy
+* Visualization automation
+
+---
+
+## 📄 License
+
+MIT License (or your preferred license)
+
+---
+
+**Status:** 🚧 Work in Progress
+
 
 ### Run
 - streamlit run app.py --server.port 8081
